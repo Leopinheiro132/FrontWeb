@@ -1,0 +1,152 @@
+:root {
+    --dark-purple: #231123ff;
+    --murrey: #82204aff;
+    --dark-cyan: #558c8cff;
+    --flax: #e8db7dff;
+    --alice-blue: #eff7ffff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--dark-cyan);
+    color: var(--alice-blue);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--dark-purple);
+    box-shadow: -3px 19px 64px -17px rgba(0,0,0,0.52);
+    color: white;
+    padding: 10px 20px;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.header a {
+    text-decoration: none;
+    color: white;
+}
+.carousel-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+}
+
+.carousel {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-height: calc(30vh - 10px);
+    overflow-x: hidden;
+}
+
+.carousel .prev-arrow,
+.carousel .next-arrow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 50px;
+    background-color: var(--murrey);
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.carousel .prev-arrow {
+    left: 0;
+}
+
+.carousel .next-arrow {
+    right: 0;
+}
+
+.carousel .carousel-inner {
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+
+    margin: 0 50px;
+}
+footer {
+    background-color: var(--dark-purple);
+    box-shadow: 0px -8px 56px -5px rgba(0,0,0,0.5);
+    color: white;
+    text-align: center;
+    align-items: center;
+    padding: 10px 0;
+    width: 100%;
+    min-height: 4.5vh ;
+}
+
+footer h4 {
+    margin: 0;
+}
+
+.carousel-inner > * {
+    flex: 0 0 auto;
+    margin-right: 10px;
+}
+
+.prev-arrow,
+.next-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.buttonCadastro {
+    border: none;
+    border-radius: 2%;
+    background: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    background-color: var(--flax);
+
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.product-card {
+    border: 1px solid var(--dark-purple);
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    max-width: 90%;
+    background-color: var(--flax);
+}
+
+.product-card h3 {
+    margin-top: 0;
+    color: var(--dark-purple);
+}
+
+.product-card p {
+    margin: 10px 0;
+}
+
+.description {
+    font-style: italic;
+}
+
+.price {
+    font-weight: bold;
+    color: var(--murrey);
+}
+
+.discount {
+    color: red;
+}

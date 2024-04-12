@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Produtos</title>
+    <link rel="stylesheet" href="produtos.css">
+</head>
+    <body>
+        <header class="header">
+            <H1>lojinha do tadeu</H1>
+            <a href="cadastraprodutos/index.html" class="buttonCadastro">Cadastrar produtos</a>
+        </header>
+
+        <div class="carousel-container">
+            <div class="carousel" id="carousel1">
+                <button class="prev-arrow" onclick="scrollCarousel('carousel1', 'prev')">&#10094;</button>
+                <div class="carousel-inner">
+
+                </div>
+                <button class="next-arrow" onclick="scrollCarousel('carousel1', 'next')">&#10095;</button>
+            </div>
+            
+            <div class="carousel" id="carousel2">
+                <button class="prev-arrow" onclick="scrollCarousel('carousel2', 'prev')">&#10094;</button>
+                <div class="carousel-inner">
+
+                </div>
+                <button class="next-arrow" onclick="scrollCarousel('carousel2', 'next')">&#10095;</button>
+            </div>
+        </div>
+
+        <footer>
+            <h4>direitos reservados</h4>
+        </footer>
+        
+        <script src="produtos.js"></script>
+    </body>
+
+</html>

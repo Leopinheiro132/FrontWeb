@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastraprodutos.css">
+    <title>Cadastrar Produtos</title>
+</head>
+<body>
+    <section class="container">
+        <div class="form-container">
+            <h1>Cadastrar produtos</h1>
+            <form class="form-cadastro" method="post" enctype="multipart/form-data">
+                <label for="nome">Nome: </label> <input type="text" id="nome" class="input-cadastro">
+                <label for="valor">Valor: </label> <input type="text" id="valor" class="input-cadastro">
+                <label for="desconto">Desconto: </label> <input type="text" id="desconto" class="input-cadastro">
+                <label for="descricao">Descrição: </label> <input type="text" id="descricao" class="input-cadastro">
+                <input type="file" name="imagem" id="imagem" class="input-cadastro" accept="image/png">
+                <button type="button" class="btn-cadastrar" onclick="submitProduto()">Cadastrar</button>
+            </form>
+        </div>
+        <div class="image-preview">
+            <h2>Pré-visualização da imagem</h2>
+            <img src="#" alt="Pré-visualização da imagem" id="preview" style="display:none;">
+        </div>
+    </section>
+    <script src="scriptCadastro.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+:root{
+--dark-purple: #231123ff;
+--murrey: #82204aff;
+--dark-cyan: #558c8cff;
+--flax: #e8db7dff;
+--alice-blue: #eff7ffff;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--dark-cyan);
+    color: var(--alice-blue);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container {
+    background-color: var(--flax);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 500px; /* Defina a largura do formulário conforme necessário */
+}
+
+h1 {
+    text-align: center;
+}
+
+.input-cadastro {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.input-cadastro[type="file"] {
+    background-color: transparent;
+}
+
+.btn-cadastrar {
+    width: 100%;
+    background-color: var(--dark-cyan);
+    color: var(--alice-blue);
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.btn-cadastrar:hover {
+    background-color: var(--murrey);
+}
+
+.image-preview {
+    margin-left: 20px;
+    text-align: center;
+}
+
+.image-preview h2 {
+    margin-top: 0;
+}
+
+#preview {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    border: 2px solid var(--dark-cyan);
+}
