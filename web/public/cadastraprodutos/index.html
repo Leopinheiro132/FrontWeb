@@ -7,6 +7,10 @@
     <title>Cadastrar Produtos</title>
 </head>
 <body>
+    <header class="header">
+        <a><H1 class="nomeLoja">Lojinha do Tadeu</H1></a>
+        <a href="../index.html" class="buttonCadastro">voltar</a>
+    </header>
     <section class="container">
         <div class="form-container">
             <h1>Cadastrar produtos</h1>
@@ -24,6 +28,18 @@
             <img src="#" alt="Pré-visualização da imagem" id="preview" style="display:none;">
         </div>
     </section>
+    <div class="carousel" id="carousel1">
+        <button class="prev-arrow" onclick="scrollCarousel('carousel1', 'prev')">&#10094;</button>
+        <div class="carousel-inner">
+
+        </div>
+        <button class="next-arrow" onclick="scrollCarousel('carousel1', 'next')">&#10095;</button>
+    </div>
+
+    <footer>
+        <h4>direitos reservados</h4>
+    </footer>
+
     <script src="scriptCadastro.js"></script>
 </body>
 </html>

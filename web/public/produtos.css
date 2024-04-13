@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
 :root {
     --dark-purple: #231123ff;
     --murrey: #82204aff;
@@ -9,9 +10,12 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
     background-color: var(--dark-cyan);
     color: var(--alice-blue);
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .header {
@@ -21,17 +25,15 @@ body {
     background-color: var(--dark-purple);
     box-shadow: -3px 19px 64px -17px rgba(0,0,0,0.52);
     color: white;
-    padding: 10px 20px;
-}
-
-.header h1 {
-    margin: 0;
+    padding: 10px 10px;
 }
 
 .header a {
     text-decoration: none;
     color: white;
+    text-align: center;
 }
+
 .carousel-container {
     display: flex;
     flex-direction: column;
@@ -49,6 +51,7 @@ body {
     position: relative;
     max-height: calc(30vh - 10px);
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .carousel .prev-arrow,
@@ -68,10 +71,14 @@ body {
 
 .carousel .prev-arrow {
     left: 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 .carousel .next-arrow {
     right: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .carousel .carousel-inner {
@@ -149,4 +156,31 @@ footer h4 {
 
 .discount {
     color: red;
+}
+.nomeLoja{
+    cursor: pointer;
+    color: var(--dark-cyan);
+    font-weight: bold;
+    
+    -webkit-user-select:none;  
+    -moz-user-select:none;     
+    -ms-user-select:none;      
+    user-select:none;  
+}
+
+.btnComprar{
+    border: none;
+    background: none;
+    cursor: pointer;
+    border-radius: 2px;
+
+    font-weight: 700;
+    transition: 0.3s;
+    padding: 10px 15px;
+    background-color: var(--dark-cyan);
+}
+
+.btnComprar:hover {
+    background-color: green;
+    border-radius: 30px;
 }
