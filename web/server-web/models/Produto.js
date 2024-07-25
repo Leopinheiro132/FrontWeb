@@ -13,7 +13,8 @@ const Produto = sequelize.define('Produto', {
         allowNull: false,
     },
     desconto: {
-        type: DataTypes.FLOAT
+        type: DataTypes.FLOAT,
+        allowNull: true,
     },
     nome: {
         type: DataTypes.STRING,
